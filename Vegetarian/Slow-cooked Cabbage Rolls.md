@@ -10,7 +10,6 @@ Read More
 
 .
 
-!\[\[evernote/\_resources/Slow-cooked_Cabbage_Rolls.resources/unknown_filename.5.png\]\]
 The #1 WORST Food For Weight Gain
 Discover the supposedly "healthy" food that is actually toxic to your body and extremely fattening!
 Read More
@@ -33,7 +32,6 @@ Read More
 .
 
 Archive Calendar
-[!\[\[evernote/\_resources/Slow-cooked_Cabbage_Rolls.resources/unknown_filename.1.gif\]\]
 Previous Day](http://www.mydailymoment.com/food_and_recipes/recipe_of_the_day/?date=2013-05-05)
 
 |       |       |          |
@@ -42,7 +40,6 @@ Previous Day](http://www.mydailymoment.com/food_and_recipes/recipe_of_the_day/?d
 
 SMTWTFS   12345678910111213141516171819202122232425262728293031 Today
 
-[!\[\[evernote/\_resources/Slow-cooked_Cabbage_Rolls.resources/unknown_filename.gif\]\]
 Next Day](http://www.mydailymoment.com/food_and_recipes/recipe_of_the_day/?date=2013-05-07)
 .
 
