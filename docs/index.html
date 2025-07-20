@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul's Recipe Collection</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fafafa;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+        .category {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .category h2 {
+            color: #e74c3c;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        .recipe-list {
+            list-style: none;
+            padding: 0;
+        }
+        .recipe-list li {
+            margin: 8px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        .recipe-list li:last-child {
+            border-bottom: none;
+        }
+        .recipe-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        .description {
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Paul's Recipe Collection</h1>
+    <p class="description">A curated collection of favorite recipes, organized by category</p>
+    
+    <div class="category">
+        <h2>🥗 Appetizers</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Hummus Hummos</span></li>
+            <li><span class="recipe-name">No-bean Hummus (raw, vegan)</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🔥 BBQ</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">BBQ Chicken</span></li>
+            <li><span class="recipe-name">Coffee Rubbed Smoked Tri-tip</span></li>
+            <li><span class="recipe-name">Paul's Smoked BBQ Ribs (3-2-1) - current</span></li>
+            <li><span class="recipe-name">Smoked Brined Pulled Pork (or chicken, or beef) -- from Bryan Finfrock</span></li>
+            <li><span class="recipe-name">Smoked Chicken Tagine</span></li>
+            <li><span class="recipe-name">Smoked Pellet Grill Brisket (Texas Style) - Burrata and Bubbles</span></li>
+            <li><span class="recipe-name">Smoked Rack of Lamb</span></li>
+            <li><span class="recipe-name">Smoking Chicken is Easy!</span></li>
+            <li><span class="recipe-name">Spicy Ribs with Fermented BBQ Sauce</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🧁 Baking</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Blackberry Buckwheat Cream Scones (gf + v) - Salted Plains</span></li>
+            <li><span class="recipe-name">Flax Bread (gluten-free)</span></li>
+            <li><span class="recipe-name">Fluffy Little Almond Flour Pancakes (GF, DF Option) - The Nourishing Home</span></li>
+            <li><span class="recipe-name">GFCF recipes Dec'12</span></li>
+            <li><span class="recipe-name">Gluten-Free Pumpkin Muffins - Cookie and Kate</span></li>
+            <li><span class="recipe-name">Homemade Coconut Almond Granola</span></li>
+            <li><span class="recipe-name">Homemade Marshmallow Recipe David Lebovitz</span></li>
+            <li><span class="recipe-name">Ooey-Gooey Extra Marshmallow-y Gluten-Free Vegan Rice Krispie Treats</span></li>
+            <li><span class="recipe-name">Paleo Blueberry Scones » Whole Lifestyle Nutrition</span></li>
+            <li><span class="recipe-name">Pumpkin Oatmeal Raisin Cookies (Gluten-Free + Dairy-Free)</span></li>
+            <li><span class="recipe-name">Two Tarts Homemade Coconut Almond Granola</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🥩 Beef</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Braised Short Ribs Recipe - Bon Appétit</span></li>
+            <li><span class="recipe-name">Perfect Prime Rib With Red Wine Jus Recipe Serious Eats</span></li>
+            <li><span class="recipe-name">Standing Rib Roast Emeril Lagasse Food Network</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🥤 Beverages</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Green Dragon Smoothie</span></li>
+            <li><span class="recipe-name">Green Lantern Smoothie</span></li>
+            <li><span class="recipe-name">Green Orangutang Smoothie</span></li>
+            <li><span class="recipe-name">Kale, blueberry, cantaloupe smoothie</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🍞 Bread & Pizza</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Josey Baker's Adventure Bread (Vegan, Gluten-Free) - Kathleen Ashmore</span></li>
+            <li><span class="recipe-name">One Bowl Gluten Free Banana Bread Minimalist Baker Recipes</span></li>
+            <li><span class="recipe-name">Pizza dough - current 2015-2018 (Gluten Free and Gum Free)</span></li>
+            <li><span class="recipe-name">Pao de queijo</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🥞 Brunch</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">2 Ingredient Pancakes</span></li>
+            <li><span class="recipe-name">Buckwheat Waffles</span></li>
+            <li><span class="recipe-name">Daddy's Banana Flapjacks (Gluten and dairy free pancakes)</span></li>
+            <li><span class="recipe-name">Galettes (buckwheat crepes)</span></li>
+            <li><span class="recipe-name">How to Make a Gluten Free Prosciutto and Spinach Quiche - Snapguide Recipe</span></li>
+            <li><span class="recipe-name">Pumpkin Waffles</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🐔 Chicken</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Orange Glazed Chicken</span></li>
+            <li><span class="recipe-name">Shawarma Roast Chicken With Shallots and Lemons Recipe Bon Appétit</span></li>
+            <li><span class="recipe-name">Skillet Chicken</span></li>
+            <li><span class="recipe-name">Team Traeger Butterflied Spatchcocked Chile-Lime Rubbed Chicken</span></li>
+            <li><span class="recipe-name">Yes, I'm Still Alive. The Proof is in the Nut-Free Chicken Satay with Coconut Rice. - Comfortably Domestic</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🍰 Desserts</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Flourless Chocolate Walnut Torte - Gourmande in the Kitchen</span></li>
+            <li><span class="recipe-name">The Easiest Chocolate Soufflé Recipe That You Will Ever Make! - Whole Lifestyle Nutrition Organic Recipes Holistic Recipes</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🐟 Fish</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Ahi Tuna Sauce Marinade</span></li>
+            <li><span class="recipe-name">Aromatic Dover Sole Filets - The Nourished Caveman</span></li>
+            <li><span class="recipe-name">Grilled Halibut with Pea Purée and Preserved Lemon Recipe - Bon Appétit</span></li>
+            <li><span class="recipe-name">Orange, Olive and Salmon Tagine Recipe on Food52</span></li>
+            <li><span class="recipe-name">Pistachio halibut with spring market lettuce</span></li>
+            <li><span class="recipe-name">Sole Piccata</span></li>
+            <li><span class="recipe-name">Sole Piccatta seasoning</span></li>
+            <li><span class="recipe-name">Trout seasoning</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🌍 International</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Paleo Pastelon Recipe Paleo Blog</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🥤 Juices</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Green Juice Recipe</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🐑 Lamb</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Succulent Greek Lamb Shoulder Roast with Lemon Potatoes</span></li>
+            <li><span class="recipe-name">Tagine of Lamb with Preserved Lemon and Olives</span></li>
+            <li><span class="recipe-name">Lamb shoulder</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🐷 Pork</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Pork Poblano Stew - THE WRIGHT RECIPES</span></li>
+            <li><span class="recipe-name">Sauteed Pork Tenderloin with an Asian Flare</span></li>
+            <li><span class="recipe-name">Tasty Sensations Dutch Oven Pork Chops 'n' Onions</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🥗 Salads</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Green bean and potato salad with mission figs</span></li>
+            <li><span class="recipe-name">Lemon-Garlic Kale Salad</span></li>
+            <li><span class="recipe-name">The Best Fresh Tomato Salsa Recipe - Allrecipes.com</span></li>
+            <li><span class="recipe-name">Zesty Slaw (Custard Style)</span></li>
+            <li><span class="recipe-name">Zesty Slaw (for pulled pork tacos)</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🧂 Sauces and Seasoning</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Bourbon-Coffee BBQ Sauce - Burrata and Bubbles</span></li>
+            <li><span class="recipe-name">Cowboy steak rub</span></li>
+            <li><span class="recipe-name">Curry (for butternut squash soup)</span></li>
+            <li><span class="recipe-name">Dry Rub for Pork</span></li>
+            <li><span class="recipe-name">Dry Rub for steak, pork, and shrimp</span></li>
+            <li><span class="recipe-name">Hawaiian Chili Pepper Water</span></li>
+            <li><span class="recipe-name">Montreal seasoning</span></li>
+            <li><span class="recipe-name">Northwest Salmon rub seasoning</span></li>
+            <li><span class="recipe-name">Peanut Sauce</span></li>
+            <li><span class="recipe-name">Simple Tomato Pizza Sauce Giada De Laurentiis Food Network</span></li>
+            <li><span class="recipe-name">Taco Seasoning</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🥖 Sides</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Asian Coconut Rice Recipe - Allrecipes.com</span></li>
+            <li><span class="recipe-name">Braised cabbage with sausages - Juls_ Kitchen</span></li>
+            <li><span class="recipe-name">Caramelized Brussels Sprouts With Lemon Recipe</span></li>
+            <li><span class="recipe-name">Pickled Carrots, Moroccan-Style - Bon Appétit</span></li>
+            <li><span class="recipe-name">Red Lentil Soup Recipe (with Video)</span></li>
+            <li><span class="recipe-name">Roasted Carrots Recipe (with Video)</span></li>
+            <li><span class="recipe-name">Shallot Confit</span></li>
+            <li><span class="recipe-name">The Gluten Free Connoisseur Cilantro Roasted Summer Squash</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🥘 Slow Cooker</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Irena's Pulled Pork Tacos</span></li>
+            <li><span class="recipe-name">Nom Nom Paleo Chicken Pho Soup</span></li>
+            <li><span class="recipe-name">Pulled Pork Tacos in a Crock Pot or Slow Cooker</span></li>
+            <li><span class="recipe-name">Slow Cooker Baby Back Ribs</span></li>
+            <li><span class="recipe-name">Slow Cooker Chicken Chile Verde Recipe - crock pot CHOW.com</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🍲 Soup Stew Chili</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Best Lentil Soup Recipe - Cookie and Kate</span></li>
+            <li><span class="recipe-name">Green Chili Stew</span></li>
+            <li><span class="recipe-name">Irena's Chicken Soup</span></li>
+            <li><span class="recipe-name">Paul's Mild Chili</span></li>
+            <li><span class="recipe-name">Paul's honey chili</span></li>
+            <li><span class="recipe-name">Sean's Chili</span></li>
+            <li><span class="recipe-name">Supa od grassak</span></li>
+            <li><span class="recipe-name">The Butternut Squash Soup</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🍳 Stovetop</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Chicken Tagine Recipe Melissa d'Arabian Food Network</span></li>
+            <li><span class="recipe-name">Chicken Tagine Recipe _ Melissa d_Arabian _ Food Network</span></li>
+            <li><span class="recipe-name">Chicken Tagine</span></li>
+            <li><span class="recipe-name">Paul's Chicken Pad Thai</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🇹🇭 Thai</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Chicken Pumpkin Thai Curry Recipe – Stupid Easy Paleo</span></li>
+            <li><span class="recipe-name">Chicken Satay with Peanut Sauce (current)</span></li>
+            <li><span class="recipe-name">Lamb Satay</span></li>
+            <li><span class="recipe-name">Massaman Beef Slow Cooker Recipe _ Simple Home Edit</span></li>
+            <li><span class="recipe-name">Thai Cucumber Salad</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>🥬 Vegetarian</h2>
+        <ul class="recipe-list">
+            <li><span class="recipe-name">Coconut Curry Chickpeas With Pumpkin and Lime Recipe</span></li>
+            <li><span class="recipe-name">Paleo Lettuce Wraps</span></li>
+            <li><span class="recipe-name">Quick Cauliflower Coconut Stew - Dr. Mark Hyman</span></li>
+            <li><span class="recipe-name">Slow-cooked Cabbage Rolls</span></li>
+            <li><span class="recipe-name">The Best Homemade Gluten-Free Lasagna Recipe</span></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>Recipe collection organized and maintained with ❤️</p>
+        <p>Total recipes: 100+</p>
+    </div>
+</body>
+</html>
