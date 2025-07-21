@@ -1,231 +1,46 @@
-# Recipe of the Day
+# Slow-Cooked Cabbage Rolls
 
-Recent Headlines:
+A hearty and comforting dish featuring tender cabbage leaves stuffed with a savory filling and slow-cooked to perfection.
 
-Monday, May 6, 2013
-\[Fancy Cabbage Rolls
+## Ingredients
 
-These fantastic cabbage wraps are something you won't want to leaf behind. Preparing the mixture takes just a few minutes and once it hits the crockpot, your work is largely done. Meal time has never been so easy.
-Read More
+### For the Filling:
+- 1 lb ground beef or turkey
+- 1 cup cooked rice
+- 1 small onion, finely diced
+- 2 cloves garlic, minced
+- 1 egg, beaten
+- 1 tsp salt
+- 1/2 tsp black pepper
+- 1/2 tsp paprika
 
-.
+### For the Cabbage:
+- 1 large head of cabbage
+- 1 can (14.5 oz) diced tomatoes
+- 1 can (8 oz) tomato sauce
+- 2 tbsp brown sugar
+- 2 tbsp lemon juice
+- 1 tsp Worcestershire sauce
+- Salt and pepper to taste
 
-The #1 WORST Food For Weight Gain
-Discover the supposedly "healthy" food that is actually toxic to your body and extremely fattening!
-Read More
+## Instructions
 
-|     |                              |
-| --- | ---------------------------- |
-|     | Delicious Recipes            |
-|     | Casserole Recipes            |
-|     | Breakfast Recipes            |
-|     | Free Recipes                 |
-|     | Chicken Recipes              |
-|     | Easy Recipe                  |
-|     | Cream Cheese Frosting Recipe |
-|     | Quick And Easy Recipes       |
-|     | Healthy Breakfast            |
-|     | New Recipes                  |
-|     | Breakfast Ideas              |
+1. **Prepare the cabbage**: Bring a large pot of water to boil. Carefully remove 12 large outer leaves from the cabbage head. Blanch the leaves in boiling water for 2-3 minutes until tender. Drain and set aside to cool.
 
-.
-.
+2. **Make the filling**: In a large bowl, combine ground meat, cooked rice, diced onion, garlic, beaten egg, salt, pepper, and paprika. Mix well.
 
-Archive Calendar
-Previous Day](http://www.mydailymoment.com/food_and_recipes/recipe_of_the_day/?date=2013-05-05)
+3. **Assemble the rolls**: Place about 1/4 cup of filling in the center of each cabbage leaf. Fold the bottom edge over the filling, fold in the sides, and roll up tightly.
 
-|       |       |          |
-| ----- | ----- | -------- | ----- | ----- |
-| \[\[# | «\]\] | May 2013 | \[\[# | »\]\] |
+4. **Prepare the sauce**: In a bowl, mix together diced tomatoes, tomato sauce, brown sugar, lemon juice, and Worcestershire sauce. Season with salt and pepper.
 
-SMTWTFS   12345678910111213141516171819202122232425262728293031 Today
+5. **Slow cook**: Place cabbage rolls seam-side down in the slow cooker. Pour the sauce over the rolls. Cover and cook on LOW for 6-8 hours or HIGH for 3-4 hours.
 
-Next Day](http://www.mydailymoment.com/food_and_recipes/recipe_of_the_day/?date=2013-05-07)
-.
+6. **Serve**: Let rest for 5 minutes before serving. Spoon extra sauce over the rolls.
 
-Food & Recipe Quiz
-**\[Are You A Culinary Ace?**
-Read More
+## Notes
 
-.
-.
+- Can be made vegetarian by substituting the meat with a mixture of mushrooms, lentils, or additional vegetables
+- Leftovers keep well in the refrigerator for 3-4 days
+- Can be frozen for up to 3 months
 
-Recipe Quick Search
-Select from the menus below and/or enter a keyword(s) and click "**search**" to start your recipe-quick-search.
-
-.
-
-.
-Recipe Categories
-
-Breakfast
-Italian Breakfast Casserole
-Move over bacon and eggs -- we've got something leaner and more delicious.
-
-______________________________________________________________________
-
-Shrimp & Grits
-This dish is a favorite of coastal residents for its low cost and great taste.
-
-______________________________________________________________________
-
-\[Eggs Benedictine
-Eggs, ham and hollandaise sauce round out this classic a.m. treat.
-
-______________________________________________________________________
-
-Egg & Ham Biscuit
-Turn your biscuits into a great breakfast sandwich with your own special touches.
-
-______________________________________________________________________
-
-Potato Casserole
-Delicious layers of eggs, potatoes, and cheese in a casserole!
-
-______________________________________________________________________
-
-more recipes
-
-Lunch
-BBQ Beef Sandwiches
-Get all the rich flavor of your favorite BBQ joint without ever leaving home.
-
-______________________________________________________________________
-
-Jalapeo Cheeseburger
-Dump the plain burger! Make lunch a heart-warming affair with this spicy recipe.
-
-______________________________________________________________________
-
-Easy Black Bean Burritos
-Need something quick and easy? Try these tasty, meatless burritos.
-
-______________________________________________________________________
-
-Panino Italiano
-This Italian roast beef sandwich is an exquisite meaty medley!
-
-______________________________________________________________________
-
-Ham & Brie Sandwich
-Creamy cheese and a good French baguette turns this into a well-made sandwich.
-
-______________________________________________________________________
-
-more recipes
-
-Dinner
-Stuffed Grouper
-Grouper is the Cadillac of meaty white fish. Try it with tender veggies.
-
-______________________________________________________________________
-
-Marsala Filets
-Wine makes ho-hum meat and potatoes sing with lots of flavor.
-
-______________________________________________________________________
-
-Chicken Tender Manicotti
-This simple spin on two classics is sure to be a family favorite. Make lots of extra helpings!
-
-______________________________________________________________________
-
-Asian Sea Bass
-An already-phenomenal fish gets an Asian flair that's so tempting.
-
-______________________________________________________________________
-
-Herbed Duck Breast
-Don't be chicken to try this dish. Your taste buds will "quack up" with delight!
-
-______________________________________________________________________
-
-more recipes
-.
-
-Dessert
-Raw Cheesecake
-You'll be a cheesecake whiz with this no-cook cake that's simple and delicious!
-
-______________________________________________________________________
-
-Tiramisu
-Espresso your love for your friends and family with this dessert.
-
-______________________________________________________________________
-
-Lemon Granita
-Here's a cool treat for summer that's simple to whip up and easy on the diet.
-
-______________________________________________________________________
-
-Coffee Cake
-Whether morning, noon or night, this cake is satisfying anytime.
-
-______________________________________________________________________
-
-Rice Pudding Pie
-Similar to rice pudding but studded with pine nuts and orange zest.
-
-______________________________________________________________________
-
-more recipes
-
-Beverages
-Boeing 52
-Fly high with a shot of this creamy, smooth Irish coffee concoction.
-
-______________________________________________________________________
-
-\[Iced Cappuccino
-In the mood for a caffeine kick? This iced coffee drink has it and plenty of great taste, too.
-
-______________________________________________________________________
-
-Spicy Milk & Pumpkin
-This classic pumpkin beverage goes down so smooth and satisfying.
-
-______________________________________________________________________
-
-Blended Fruit Shake
-A blend of pineapple, strawberries make this drink refreshing.
-
-______________________________________________________________________
-
-Pink Shower Punch
-This excellent drink for bridal showers will warm up your party guests.
-
-______________________________________________________________________
-
-more recipes
-
-Appetizers
-Classic Cheese Fondue
-Hardly much ado about nothing -- this cheesy, blast-from-the-past fondue rocks.
-
-______________________________________________________________________
-
-Lemon Cream Fruit Dip
-This great summer dip is a versatile and refreshing crowd-pleaser.
-
-______________________________________________________________________
-
-Super Serrano Salsa
-Fresh ingredients make this spicy salsa a real chip off the old block.
-
-______________________________________________________________________
-
-California Rolls
-Impress your friends! With a little practice, making your own sushi rolls is easy!
-
-______________________________________________________________________
-
-Cocktail Meatballs
-The compliments will flow after guests sample this classic, tasty party dish.
-
-______________________________________________________________________
-
-more recipes
-
-\*\*
-Or check out all of our recipes.\*\*.
+*Serves 6*

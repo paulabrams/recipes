@@ -1,16 +1,53 @@
-______________________________________________________________________
+# Smoked Brined Pulled Pork (or chicken, or beef)
+*From Bryan Finfrock*
 
-______________________________________________________________________
+This recipe works for pork, chicken, or beef. The brine keeps the meat incredibly moist and flavorful, while the low-and-slow smoking method ensures perfectly tender results every time.
 
-For the brine:
-4 cups water
-1/4 cup kosher salt
-Garlic-  seriously- lots of garlic
-Herbs.  I use sage, thyme, and oregano because they work with pork, but any herbs
-1/4-1/2 cup apple cider vinegar.  I make my own from my apple trees, but anything real with a “mother” is good. If beef, red wine vinegar is also good. But apple cider with a Mother will begin breaking down the meat better.Boil it together until the salt melts in the water.  Add 4 cups of ice to cool.  Keep adding a little more ice, until the ice stops melting and the water has dropped to 32 degrees.Add meat. Submerge meat.  Cover.  (I usually use a cooler the size of the cut of meat/animal, and just add ice periodically.  As long as there is still ice, the water is still 32 degrees, and you're keeping the meat safe)After 24-36 hours, drain brine.  dab meat dry with paper towel. Cover meat with Hardware Store rub - I used to try and make my own rubs - but hardware local hardware store BBQ sections have the best.Set smoker temp to 200 - put meat in smoke - cook until 165.  If chicken or turkey - youre done.  If beef or pork, wrap it with foil - double wrap or more is ok.  Seal in the moisture that is still in the meat.
-Increase heat to 250, and bring the meat up to 190 degrees.It works every time.
+## Ingredients
 
-Image from iOS
-JPEG
-Open file
-!\[\[Image from iOS.jpg\]\]!\[\[Image from iOS (1).jpg\]\]!\[\[Image from iOS (2).jpg\]\]
+### For the Brine:
+- 4 cups water
+- 1/4 cup kosher salt
+- Lots of garlic (seriously - use plenty!)
+- Fresh herbs (sage, thyme, and oregano work great with pork)
+- 1/4 to 1/2 cup apple cider vinegar with "mother" (or red wine vinegar for beef)
+- 4 cups ice
+
+### For Smoking:
+- Your choice of meat (pork shoulder, chicken, or beef)
+- Hardware store BBQ rub (or your favorite dry rub)
+
+## Instructions
+
+### Prepare the Brine:
+1. **Make brine**: Boil water with salt, garlic, and herbs until salt dissolves completely.
+
+2. **Cool the brine**: Add 4 cups of ice to cool the mixture. Keep adding ice until it stops melting and the water temperature drops to 32°F.
+
+3. **Brine the meat**: Submerge meat completely in the brine. Cover and refrigerate (or use a cooler with ice) for 24-36 hours, maintaining 32°F temperature.
+
+### Prepare for Smoking:
+4. **Prep the meat**: Remove from brine and pat dry with paper towels.
+
+5. **Season**: Cover meat generously with your favorite BBQ rub.
+
+### Smoking Process:
+6. **Initial smoke**: Set smoker to 200°F. Smoke until internal temperature reaches 165°F.
+   - **For chicken or turkey**: You're done! Rest and serve.
+   - **For pork or beef**: Continue to next step.
+
+7. **Wrap and finish**: Double-wrap meat tightly in foil to seal in moisture.
+
+8. **Final cook**: Increase smoker temperature to 250°F. Continue cooking until internal temperature reaches 190°F.
+
+9. **Rest**: Let meat rest for 15-30 minutes before shredding or slicing.
+
+## Notes
+
+- Use a cooler-sized container for brining larger cuts
+- Maintain brine temperature by adding ice periodically
+- Apple cider vinegar with "mother" helps break down the meat fibers
+- This method works every time for perfectly moist, tender results
+- Total cooking time varies by size, but expect 1-1.5 hours per pound
+
+*Perfect for feeding a crowd!*
