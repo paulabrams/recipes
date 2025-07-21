@@ -1,3 +1,12 @@
+---
+title: "BBQ Chicken"
+description: "Classic barbecued chicken with dry rub and sauce"
+category: "BBQ"
+cook_time: "45-60 minutes"
+servings: "4-6"
+tags: ["BBQ", "Chicken", "Grilling", "American"]
+---
+
 # BBQ Chicken
 
 ## Ingredients

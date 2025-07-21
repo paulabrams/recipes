@@ -1,3 +1,15 @@
+---
+title: "Homemade Marshmallows"
+description: "Fluffy, homemade marshmallows perfect for s'mores or hot chocolate"
+category: "Baking"
+author: "David Lebovitz"
+prep_time: "10 minutes"
+cook_time: "25 minutes"
+total_time: "4+ hours (including drying time)"
+servings: "25-50 marshmallows"
+tags: ["Dessert", "Candy", "Homemade", "Sweet Treats"]
+---
+
 # Homemade Marshmallows
 
 ## Ingredients

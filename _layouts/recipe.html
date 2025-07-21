@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #e74c3c;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+        }
+        
+        .recipe-meta {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        .recipe-content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .ingredients ul, .directions ol {
+            padding-left: 20px;
+        }
+        
+        .ingredients li, .directions li {
+            margin: 8px 0;
+        }
+        
+        .ingredients input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .recipe-notes {
+            background: #f8f9fa;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .print-button {
+            float: right;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .print-button:hover {
+            background: #c0392b;
+        }
+        
+        @media print {
+            .back-link, .print-button {
+                display: none;
+            }
+            body {
+                background: white;
+                font-size: 12pt;
+            }
+            .recipe-content, .recipe-meta {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="{{ site.baseurl }}/" class="back-link">← Back to Recipe Collection</a>
+    
+    <button onclick="window.print()" class="print-button">🖨️ Print Recipe</button>
+    
+    {% if page.description or page.author or page.prep_time or page.cook_time or page.servings %}
+    <div class="recipe-meta">
+        {% if page.author %}<strong>By:</strong> {{ page.author }}<br>{% endif %}
+        {% if page.description %}{{ page.description }}<br>{% endif %}
+        {% if page.prep_time %}<strong>Prep Time:</strong> {{ page.prep_time }} | {% endif %}
+        {% if page.cook_time %}<strong>Cook Time:</strong> {{ page.cook_time }} | {% endif %}
+        {% if page.servings %}<strong>Serves:</strong> {{ page.servings }}{% endif %}
+    </div>
+    {% endif %}
+    
+    <div class="recipe-content">
+        {{ content }}
+    </div>
+    
+    {% if page.tags and page.tags.size > 0 %}
+    <div class="recipe-meta" style="margin-top: 20px;">
+        <strong>Tags:</strong> 
+        {% for tag in page.tags %}
+            <span style="background: #ecf0f1; padding: 3px 8px; border-radius: 15px; margin-right: 5px; font-size: 12px;">{{ tag }}</span>
+        {% endfor %}
+    </div>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,40 @@
+# Jekyll Configuration for Recipe Collection
+title: "Paul's Recipe Collection"
+description: "A curated collection of favorite recipes, organized by category"
+baseurl: "/recipes"
+url: "https://paulabrams.github.io"
+
+# Markdown processing
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Default layout for ALL markdown files
+defaults:
+  - scope:
+      path: "**/*.md"
+    values:
+      layout: "recipe"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile*
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - "outdated or duplicate"
+  - "not-recipes"
+
+# Enable processing of markdown files in subdirectories
+include:
+  - "_*"

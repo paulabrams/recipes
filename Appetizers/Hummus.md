@@ -1,3 +1,12 @@
+---
+title: "Hummus"
+description: "Creamy Middle Eastern chickpea dip with harissa spice"
+category: "Appetizers"
+prep_time: "10 minutes"
+servings: "4-6"
+tags: ["Middle Eastern", "Vegetarian", "Vegan", "Gluten-Free", "Dip"]
+---
+
 # Hummus
 
 ## Ingredients
