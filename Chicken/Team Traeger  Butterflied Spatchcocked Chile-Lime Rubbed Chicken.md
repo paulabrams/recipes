@@ -1,84 +1,68 @@
 # Butterflied "Spatchcocked" Chile-Lime Rubbed Chicken
 
-Posted by mmillet on June 25, 2013
+*Team Traeger Recipe*
 
-!\[\[evernote/\_resources/Team_Traeger\_\_Butterflied_Spatchcocked_Chile-Lime_Rubbed_Chicken.resources/unknown_filename.5.png\]\]
+Spatchcocking (butterflying) removes the backbone so the bird lies flat on the grill, allowing the whole chicken to cook quicker with a beautiful presentation. This recipe features South American flavors and spices perfect for the grill.
 
-Some of you probably read that and thought, "Spa-what?". Spatchcocked is a cool way of saying what is now more commonly known as "butterflied" chicken. In a matter of minutes you remove the backbone so that the bird lies flat on the grill, allowing the whole chicken to cook quicker and make for a pretty sweet presentation too.
+## Recipe Details
 
-This method of cooking the whole bird is particularly popular in Southern California, where patrons happily gobble up chile-lime butterflied chicken. We put a juicy Traeger spin on this spicy recipe for butterflied chicken. The rub is exploding with South American flavors and spices that would also be a great addition to the Chicken Challenge.
+- **Prep Time**: 10 minutes plus 12-24 hours marinating
+- **Cook Time**: 40-50 minutes  
+- **Serves**: 4-6
+- **Recommended Wood**: Hickory, Mesquite, or Oak pellets
 
-## **BUTTERFLIED CHILE-LIME RUBBED CHICKEN**
+## Ingredients
 
-_PREP TIME: 10 minutes plus 12 to 24 hours marinating
-COOK TIME: 40 to 50 minutes
-SERVES: 4 to 6
-RECOMMENDED PELLETS: Hickory, Mesquite or Oak_
+### Chile-Lime Rub:
+- 3 tbsp chile powder (preferably New Mexico chile) or Hungarian paprika
+- 2 tbsp extra-virgin olive oil
+- 2 tsp freshly grated lime zest
+- 3 tbsp fresh lime juice
+- 1 tbsp minced garlic
+- 1 tsp ground coriander
+- 1 tsp ground cumin
+- 1 tsp dried oregano (preferably Mexican)
+- 1 1/2 tsp kosher salt
+- 1 tsp freshly ground black pepper
+- Pinch of ground cinnamon
 
-**INGREDIENTS:**
-3 tablespoons chile powder, preferably New Mexico chile, or Hungarian paprika
-2 tablespoons extra-virgin olive oil
-2 teaspoons freshly grated lime zest
-3 tablespoons lime juice
-1 tablespoon minced garlic
-1 teaspoon ground coriander
-1 teaspoon ground cumin
-1 teaspoon dried oregano, preferably Mexican
-1 1/2 teaspoons kosher salt
-1 teaspoon freshly ground pepper
-Pinch of ground cinnamon
-1 3 1/2-to 4-pound chicken
-Cilantro, lime juice or salsa for serving (optional)
+### For the Chicken:
+- 1 whole chicken (3 1/2 to 4 lbs)
+- Fresh cilantro for serving (optional)
+- Extra lime juice for serving (optional)
+- Salsa for serving (optional)
 
-Let's start by butterflying the chicken. Put the whole chicken on the cutting board so that it is breast-side down.
+## Instructions
 
-!\[\[evernote/\_resources/Team_Traeger\_\_Butterflied_Spatchcocked_Chile-Lime_Rubbed_Chicken.resources/unknown_filename.6.png\]\]
+### Butterfly the Chicken:
 
-Using sturdy kitchen shears, cut down one side of the backbone (through the ribs).
+1. **Position chicken**: Place whole chicken breast-side down on cutting board.
 
-!\[\[evernote/\_resources/Team_Traeger\_\_Butterflied_Spatchcocked_Chile-Lime_Rubbed_Chicken.resources/unknown_filename.4.png\]\]
+2. **Remove backbone**: Using sturdy kitchen shears, cut down one side of the backbone through the ribs. Make an identical cut on the opposite side to remove backbone completely. Discard or save for stock.
 
-Make an identical cut on the opposite side to remove the backbone completely; discard (or reserve it for stock).
+3. **Flatten**: Turn chicken cut-side down and flatten with heel of your hand to break the breastbone. For completely flat bird, you can also remove the keel bone (optional).
 
-!\[\[evernote/\_resources/Team_Traeger\_\_Butterflied_Spatchcocked_Chile-Lime_Rubbed_Chicken.resources/unknown_filename.3.png\]\]
+### Prepare and Marinate:
 
-Combine chile powder (or paprika) and oil in a small bowl with lime zest and juice, garlic, coriander, cumin, oregano, salt, pepper and cinnamon to form a wet paste. Place the chicken cut-side down and flatten with the heel of your hand to break the breastbone. (If you want the bird to lie completely flat, you can also remove the keel bone but it isn't mandatory.)
+4. **Make rub**: Combine chile powder and oil in a small bowl with lime zest, lime juice, garlic, coriander, cumin, oregano, salt, pepper, and cinnamon to form a wet paste.
 
-!\[\[evernote/\_resources/Team_Traeger\_\_Butterflied_Spatchcocked_Chile-Lime_Rubbed_Chicken.resources/unknown_filename.png\]\]
+5. **Apply rub**: Generously smear spice rub under and over the skin and on the interior of the bird.
 
-Generously smear the spice rub under and over the skin and on the interior of the bird. Place in a nonreactive baking dish. Cover with plastic wrap and refrigerate overnight or up to 24 hours.
+6. **Marinate**: Place in nonreactive baking dish, cover with plastic wrap, and refrigerate overnight or up to 24 hours.
 
-When ready to cook start the Traeger on Smoke with the lid open until fire is established (4 to 5 minutes). Preheat grill to 400 degrees F with the lid closed for 10 to 15 minutes.
+### Grill the Chicken:
 
-Place the butterflied chicken breastbone-side down on the grill grate and cook for 40 to 50 minutes or until an instant-read thermometer inserted into the thickest part  without touching bone registers 165°F.
+7. **Preheat grill**: Start Traeger on Smoke with lid open until fire is established (4-5 minutes). Preheat to 400°F with lid closed for 10-15 minutes.
 
-!\[\[evernote/\_resources/Team_Traeger\_\_Butterflied_Spatchcocked_Chile-Lime_Rubbed_Chicken.resources/unknown_filename.8.png\]\]
+8. **Cook**: Place butterflied chicken breastbone-side down on grill grate. Cook for 40-50 minutes or until instant-read thermometer inserted into thickest part (without touching bone) registers 165°F.
 
-!\[\[evernote/\_resources/Team_Traeger\_\_Butterflied_Spatchcocked_Chile-Lime_Rubbed_Chicken.resources/unknown_filename.1.png\]\]
+9. **Rest and serve**: Transfer to platter and let rest 5-10 minutes before carving. Garnish with cilantro and squeeze of lime juice if desired.
 
-Transfer to a platter and let rest for 5 to 10 minutes before carving. Garnish with some cilantro and a squeeze of lime juice.
+## Notes
 
-!\[\[evernote/\_resources/Team_Traeger\_\_Butterflied_Spatchcocked_Chile-Lime_Rubbed_Chicken.resources/unknown_filename.7.png\]\]
+- Butterflying reduces cooking time significantly compared to whole roasted chicken
+- The wet rub creates incredible flavor and helps prevent drying out
+- Can be adapted for oven cooking at 425°F
+- Great served with Mexican sides like rice, beans, or tortillas
 
-!\[\[evernote/\_resources/Team_Traeger\_\_Butterflied_Spatchcocked_Chile-Lime_Rubbed_Chicken.resources/unknown_filename.2.png\]\]
-
-Currently rated 3.5 by 36 people
-
-- Currently 3.5/5 Stars.
-
-- 1
-
-- 2
-
-- 3
-
-- 4
-
-- 5
-
-Tweet
-3
-
-This page has been shared 3 times. View these Tweets.
-
-Permalink
+*Perfect for outdoor entertaining*
