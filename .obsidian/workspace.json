@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Salads/Apple Coleslaw for Four.md",
+                "file": "Desserts/Flourless Chocolate Walnut Torte  Cake.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Apple Coleslaw for Four"
+              "title": "Flourless Chocolate Walnut Torte  Cake"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Salads/Apple Coleslaw for Four.md",
+                "file": "Desserts/Flourless Chocolate Walnut Torte  Cake.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Apple Coleslaw for Four"
+              "title": "Backlinks for Flourless Chocolate Walnut Torte  Cake"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Salads/Apple Coleslaw for Four.md",
+                "file": "Desserts/Flourless Chocolate Walnut Torte  Cake.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Apple Coleslaw for Four"
+              "title": "Outgoing links from Flourless Chocolate Walnut Torte  Cake"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Salads/Apple Coleslaw for Four.md",
+                "file": "Desserts/Flourless Chocolate Walnut Torte  Cake.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Apple Coleslaw for Four"
+              "title": "Outline of Flourless Chocolate Walnut Torte  Cake"
             }
           }
         ]
@@ -169,5 +169,15 @@
     }
   },
   "active": "f92ece76f9a3c8be",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Sauces and Seasoning/Simple Tomato Pizza Sauce.md",
+    "Sauces and Seasoning/Simple Pizza and Pasta Sauce.md",
+    "Desserts/Flourless Chocolate Walnut Torte  Cake.md",
+    "Sauces and Seasoning/Simple Tomato Pizza Sauce  Giada De Laurentiis  Food Network.md",
+    "Sides/Green Beans (best!).md",
+    "Sides/Pickled Carrots, Moroccan-Style - Bon Appétit.md",
+    "Salads/Apple Coleslaw for Four.md",
+    "Salads/Lemon-Garlic Kale Salad.md",
+    "Sides/Shallot Confit.md"
+  ]
 }

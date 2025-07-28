@@ -1,4 +1,4 @@
-# Simple Tomato Pizza Sauce
+# Simple Pizza and Pasta Sauce
 
 ## Ingredients
 - [ ] 1/2 cup extra-virgin olive oil

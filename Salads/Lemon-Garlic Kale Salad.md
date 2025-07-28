@@ -1,4 +1,4 @@
-# Lemon-Garlic Kale Salad
+# Lemon-Garlic Kale Salad (best!)
 
 ## Ingredients
 - [ ] 2 cups sliced almonds, toasted
