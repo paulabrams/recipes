@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "604",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -168,7 +169,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f92ece76f9a3c8be",
+  "active": "52f7b51b38121102",
   "lastOpenFiles": [
     "Sauces and Seasoning/Simple Tomato Pizza Sauce.md",
     "Sauces and Seasoning/Simple Pizza and Pasta Sauce.md",
