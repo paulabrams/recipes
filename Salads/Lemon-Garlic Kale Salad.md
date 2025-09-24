@@ -9,7 +9,7 @@
 - [ ] 10-12 ounces kale leaves, thick stems removed, washed and dried
 - [ ] 2 honeycrisp apples, cubed
 - [ ] 1 firm avocado, cubed
-- [ ] 1½ cups freshly grated Parmesan or Gruyere (optional)
+- [ ] 1½ cups freshly grated Romano or Parmesan or Gruyere (optional)
 
 ## Directions
 1. Toast sliced almonds in a dry pan until golden brown; set aside to cool
