@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Salads/Zesty Slaw (for pulled pork tacos).md",
+                "file": "Salads/Dairy-Free Ranch Salad Dressing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zesty Slaw (for pulled pork tacos)"
+              "title": "Dairy-Free Ranch Salad Dressing"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "goddess",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,8 +185,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "548c976c215d2aac",
+  "active": "52f7b51b38121102",
   "lastOpenFiles": [
+    "Sauces and Seasoning/Avocado Goddess Sauce - Half Baked Harvest.md",
+    "Salads/Zesty Slaw (for pulled pork tacos).md",
     "Thai/Thai Cucumber Salad.md",
     "Thai/Massaman Beef Slow Cooker Recipe _ Simple Home Edit.pdf",
     "Thai/Chicken Satay with Peanut Sauce (current).md",
