@@ -22,17 +22,15 @@
             }
           },
           {
-            "id": "548c976c215d2aac",
+            "id": "6593fe5b15ea25da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "Salads/Zesty Slaw (for pulled pork tacos).md",
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.10.3"
               },
-              "icon": "lucide-file",
-              "title": "Zesty Slaw (for pulled pork tacos)"
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.3"
             }
           }
         ],
@@ -185,23 +183,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "548c976c215d2aac",
+  "active": "6593fe5b15ea25da",
   "lastOpenFiles": [
-    "Slow Cooker/Pulled Pork Tacos in a Crock Pot or Slow Cooker.md",
-    "Salads/Dairy-Free Ranch Salad Dressing.md",
-    "Sauces and Seasoning/Avocado Goddess Sauce - Half Baked Harvest.md",
-    "Salads/Zesty Slaw (for pulled pork tacos).md",
-    "Thai/Thai Cucumber Salad.md",
+    "Juices/Kale, blueberry, cantaloupe smoothie.md",
+    "Juices/Green Orangutang Smoothie.md",
+    "Juices/Green Lantern Smoothie.md",
+    "Juices/Green Dragon Smoothie.md",
+    "Main Courses/The Butternut Squash Soup.md",
+    "Main Courses/Supa od grassak.md",
+    "Main Courses/Sean's Chili.md",
+    "Main Courses/Paul's Mild Chili.md",
+    "Main Courses/Paul's honey chili.md",
+    "Main Courses/Irena's Chicken Soup.md",
+    "Main Courses/Green Chili Stew.md",
+    "Main Courses/Best Lentil Soup Recipe - Cookie and Kate.md",
+    "Main Courses/Slow Cooker Chicken Chile Verde Recipe - crock pot CHOW.com.md",
+    "Main Courses/Slow Cooker Baby Back Ribs.md",
+    "Main Courses/Pulled Pork Tacos in a Crock Pot or Slow Cooker.md",
+    "Main Courses/Nom Nom Paleo Chicken Pho Soup.md",
+    "Main Courses/Chicken Tagine.md",
+    "Main Courses/Chicken Tagine Recipe  Melissa d'Arabian  Food Network.md",
+    "Main Courses/lamb shoulder.md",
+    "Main Courses/Team Traeger  Butterflied Spatchcocked Chile-Lime Rubbed Chicken.md",
+    "Main Courses/Yes, I'm Still Alive. The Proof is in the Nut-Free Chicken Satay with Coconut Rice. - Comfortably Domestic.md",
+    "Main Courses/Tasty Sensations Dutch Oven Pork Chops 'n' Onions.md",
+    "Main Courses/Tagine of Lamb with Preserved Lemon and Olives.md",
+    "Main Courses/Succulent Greek Lamb Shoulder Roast with Lemon Potatoes.md",
+    "Main Courses/Standing Rib Roast  Emeril Lagasse  Food Network.md",
+    "Main Courses/Skillet Chicken.md",
+    "Main Courses",
+    "International",
+    "Macedonian",
+    "Workout/pre-workout snacks.jpeg",
+    "Workout",
     "Thai/Massaman Beef Slow Cooker Recipe _ Simple Home Edit.pdf",
-    "Thai/Chicken Satay with Peanut Sauce (current).md",
-    "Desserts/Flourless Chocolate Walnut Torte  Cake.md",
-    "Sides/Green Beans (best!).md",
-    "Sauces and Seasoning/Simple Tomato Pizza Sauce.md",
-    "Sauces and Seasoning/Simple Pizza and Pasta Sauce.md",
-    "Sauces and Seasoning/Simple Tomato Pizza Sauce  Giada De Laurentiis  Food Network.md",
-    "Sides/Pickled Carrots, Moroccan-Style - Bon Appétit.md",
-    "Salads/Apple Coleslaw for Four.md",
-    "Salads/Lemon-Garlic Kale Salad.md",
-    "Sides/Shallot Confit.md"
+    "Thai",
+    "Stovetop/Chicken Tagine Recipe _ Melissa d_Arabian _ Food Network.pdf",
+    "Stovetop",
+    "Smoothies",
+    "Sides/Red Lentil Soup Recipe (with Video).pdf",
+    "Reference/pre-workout snacks.jpeg"
   ]
 }
