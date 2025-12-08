@@ -1,7 +1,5 @@
 # Pickled Carrots, Moroccan-Style
 
-*From Bon Appétit*
-
 These vibrant pickled carrots add a spicy, tangy crunch to any meal. The Moroccan-inspired spice blend with coriander and cumin makes them perfect as a condiment or side dish.
 
 ## Recipe Details
@@ -43,6 +41,7 @@ These vibrant pickled carrots add a spicy, tangy crunch to any meal. The Morocca
 - Perfect accompaniment to tagines, grilled meats, or sandwiches
 
 ## Nutritional Information (per serving)
+
 - Calories: 36
 - Fat: 0g
 - Carbohydrates: 8.5g
