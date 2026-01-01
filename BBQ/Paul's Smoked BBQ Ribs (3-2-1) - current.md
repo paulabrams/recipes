@@ -8,7 +8,7 @@
 ### Dry Rub
 - [ ] 1 tablespoon paprika (smoked if possible)
 - [ ] 1 tablespoon brown sugar
-- [ ] 1 tablespoon coarse sea salt
+- [ ] 1 *light* tablespoon coarse sea salt
 - [ ] 3/4 teaspoon cumin
 - [ ] 1/4 teaspoon garlic powder
 - [ ] 1/2 teaspoon black pepper
@@ -16,8 +16,8 @@
 
 ### BBQ Sauce
 - [ ] 3 tablespoons paprika
-- [ ] 1 tablespoon salt
-- [ ] 2 teaspoons black pepper
+- [ ] 1 *light* tablespoon salt
+- [ ] 2 *light* teaspoons black pepper
 - [ ] 1/4 to 1/2 teaspoon cayenne pepper (mild to medium)
 - [ ] 1 teaspoon garlic powder
 - [ ] 1/2 teaspoon dried thyme
