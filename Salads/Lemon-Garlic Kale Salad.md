@@ -2,7 +2,7 @@
 
 ## Ingredients
 - [ ] 2 cups sliced almonds, toasted
-- [ ] 1/3 cup freshly squeezed lemon juice (from 2-4 lemons)
+- [ ] 1/3  cup freshly squeezed lemon juice (from 2-4 lemons)
 - [ ] 1 heaping teaspoon kosher salt
 - [ ] 1½ cups extra-virgin olive oil
 - [ ] 4 cloves garlic, minced
