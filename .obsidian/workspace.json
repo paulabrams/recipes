@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Main Courses/Lamb and Leek Stew.md",
+                "file": "Sides/Whole Roasted Cauliflower in a Dutch Oven.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lamb and Leek Stew"
+              "title": "Whole Roasted Cauliflower in a Dutch Oven"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lamb leek",
+                "query": "cauliflower",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,10 +184,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6593fe5b15ea25da",
+  "active": "3e11921cb6fa04ba",
   "lastOpenFiles": [
-    "Salads/Lemon-Garlic Kale Salad.md",
+    "Main Courses/Chili Lime Chipotle Chicken.md",
     "Main Courses/Lamb and Leek Stew.md",
+    "Salads/Lemon-Garlic Kale Salad.md",
     "Meal Plans for Trips/Wilbur Hot Springs Trip - February 2025.md",
     "Meal Plans for Trips/Untitled",
     "Wilbur Hot Springs Trip - February 2025.md",
@@ -215,7 +215,6 @@
     "Main Courses/Slow Cooker Baby Back Ribs.md",
     "Main Courses/Pulled Pork Tacos in a Crock Pot or Slow Cooker.md",
     "Main Courses/Nom Nom Paleo Chicken Pho Soup.md",
-    "Main Courses/Chicken Tagine.md",
     "Main Courses",
     "International",
     "Macedonian",
