@@ -10,7 +10,7 @@
 - [ ] ½ cup finely chopped fresh cilantro (leaves and tender stems)
 - [ ] ¼ cup finely chopped fresh flat-leaf parsley (leaves and tender stems)
 - [ ] 2 Tbsp. finely chopped fresh oregano leaves
-- [ ] ¾ cup extra-virgin olive oil
+- [x] ¾ cup extra-virgin olive oil
 
 ## Directions
 

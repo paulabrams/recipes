@@ -1,6 +1,7 @@
 # Lamb and Leek Stew
 
 ## Ingredients
+
 - [ ] 2 lbs lamb shoulder, trimmed of fat and cubed
 - [ ] 4 leeks, green ends removed, sliced into half-moons
 - [ ] 3 cloves garlic, minced
@@ -16,6 +17,7 @@
 - [ ] Salt and pepper to taste
 
 ## Directions
+
 1. Season cubed lamb with salt and pepper.
 2. Heat olive oil in a large Dutch oven over medium-high heat.
 3. Brown lamb in batches, searing about 1 minute per side. Set aside.
@@ -31,12 +33,14 @@
 13. Remove bay leaves before serving.
 
 ## Tips
+
 - Lamb shoulder or leg works well for this stew
 - Can thicken with a cornstarch slurry if desired - remove from heat first
 - Even better the next day as leftovers
 - Great served over mashed potatoes or with crusty bread
 
 ## Notes
+
 - Serves 6-8 people
 - Adapted from The Whole Kitchen
 - Perfect for rye bread

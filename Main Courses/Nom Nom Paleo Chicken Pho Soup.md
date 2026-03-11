@@ -3,6 +3,7 @@
 ## Ingredients
 
 ### For the Broth
+
 - [ ] 1 tablespoon coriander seeds
 - [ ] 3 whole cloves
 - [ ] 2 inch fresh ginger, peeled, thickly sliced, and bruised
@@ -16,6 +17,7 @@
 - [ ] 1-2 teaspoons maple syrup (optional)
 
 ### For the Bowls
+
 - [ ] 4 medium zucchini, spiralized and blotted dry with paper towels
 - [ ] ½ small yellow onion, thinly sliced against the grain and soaked in water for 10 minutes
 - [ ] 2 green onions, thinly sliced (green parts only)
@@ -45,11 +47,13 @@
 16. Garnish with onion, green onion, fresh herbs, and other optional toppings. Serve immediately.
 
 ## Tips
+
 - For stovetop method: Use a 6-8 quart stockpot, simmer for 2 hours instead of pressure cooking
 - Chicken can be refrigerated for up to 3 days or frozen for up to 3 months
 - Broth can be refrigerated for up to 3 days or frozen for up to 3 months
 
 ## Notes
+
 - Serves 4
 - Calories: 302kcal per serving
 - Paleo and gluten-free friendly

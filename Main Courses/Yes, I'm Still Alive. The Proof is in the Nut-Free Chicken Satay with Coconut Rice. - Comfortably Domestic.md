@@ -1,4 +1,4 @@
-# Yes, I’m Still Alive. The Proof is in the Nut-Free Chicken Satay with Coconut Rice.
+# Yes, I’m Still Alive. The Proof is in the Nut-Free Chicken Satay with Coconut Rice
 
 September 25, 2013 by Kirsten —7 Comments
 
@@ -96,7 +96,7 @@ For Serving:
 
 ¼ C. chopped fresh parsley
 
-**Important Note:** *This recipe requires a lot of simultaneous prep work and cooking in order to have each component of the meal finish at the same time. I’ll explain each step as best I can individually, but please keep in mind that you’ll be cooking the chicken, rice, and sauce at the same time. I find it helpful to read the directions in their entirety before proceeding.*
+**Important Note:** _This recipe requires a lot of simultaneous prep work and cooking in order to have each component of the meal finish at the same time. I’ll explain each step as best I can individually, but please keep in mind that you’ll be cooking the chicken, rice, and sauce at the same time. I find it helpful to read the directions in their entirety before proceeding._
 
 Place one chicken breasts between two sheets of plastic wrap, and pound them to and even ½-inch thickness with the flat side of a meat mallet. Repeat with the remaining chicken breasts. Slice the flattened chicken against the grain, into ½-inch slices. Set the chicken aside while you whip up the marinade.
 
@@ -134,7 +134,7 @@ Fluff the rice with fork before spooning a bed of rice onto each plate. Lay the 
 
 0Share
 
-### Share this:
+### Share this
 
 - Share
 

@@ -8,14 +8,16 @@ Yogurt acts as both a tenderizer and flavor carrier for the aromatic shawarma sp
 
 *Serves 4*
 
-### Spice Mixture:
+### Spice Mixture
+
 - 1 tbsp coriander seeds
 - 1 1/2 tsp cumin seeds
 - 1 1/2 tsp black peppercorns
 - 1 1/2 tsp smoked paprika
 - 3/4 tsp ground turmeric
 
-### For the Chicken:
+### For the Chicken
+
 - 4 garlic cloves, finely grated
 - 1/4 cup whole-milk plain Greek yogurt or sour cream
 - 4 tbsp extra-virgin olive oil, divided

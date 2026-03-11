@@ -1,3 +1,5 @@
+# Chili Lime Chipotle Chicken
+
 This is the secret to making some of the easiest, best chicken right in your home oven. The spices come together incredibly well and the chicken come out so juicy, so flavorful, and it makes for easy meals all week long. You can make high protein bowls, tacos, quesadillas, or just pair the chicken with your favorite air fried veggies. I used my [@kaizenfoodco](https://www.instagram.com/kaizenfoodco/) high protein low carb rice, but use whatever rice you prefer!  
   
 Here is how to make it:  

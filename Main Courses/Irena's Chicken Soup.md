@@ -1,6 +1,7 @@
 # Irena's Chicken Soup
 
 ## Ingredients
+
 - [ ] 5 bone-in skin-on organic chicken thighs
 - [ ] 2 bunches of organic carrots
 - [ ] 1/2 cup Italian parsley, finely chopped
@@ -8,6 +9,7 @@
 - [ ] Black pepper to taste
 
 ## Directions
+
 1. Wash the chicken and put into a large pot
 2. Fill pot with water up to rivets
 3. Add 1 tablespoon salt
@@ -23,12 +25,14 @@
 13. Serve immediately
 
 ## Tips
+
 - Don't overcook the carrots - 5 minutes keeps them tender-crisp
 - Organic chicken thighs give the best flavor
 - Skim scum regularly for a clear broth
 - Adjust salt and pepper to taste
 
 ## Notes
+
 - Serves 4-6 people
 - Total cooking time: about 1 hour 20 minutes
 - Classic comfort food recipe
