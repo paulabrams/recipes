@@ -1,0 +1,507 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel vs Devil - Get to the Gym</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: Georgia, serif;
+            background: #0f0f1a;
+            color: #eee;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 20px 0 5px;
+            text-align: center;
+            background: linear-gradient(90deg, #f9d423, #ff4e50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            color: #777;
+            font-style: italic;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .ask-btn {
+            font-family: Georgia, serif;
+            font-size: 1.2rem;
+            padding: 16px 44px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background: linear-gradient(135deg, #f9d423, #ff4e50);
+            color: #1a1a2e;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(249, 212, 35, 0.3);
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+        }
+        .ask-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 30px rgba(249, 212, 35, 0.5);
+        }
+        .ask-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .arena {
+            display: flex;
+            gap: 24px;
+            width: 100%;
+            max-width: 1050px;
+            flex: 1;
+        }
+        @media (max-width: 700px) {
+            .arena { flex-direction: column; }
+        }
+
+        .panel {
+            flex: 1;
+            border-radius: 14px;
+            padding: 22px;
+            min-height: 320px;
+            position: relative;
+            overflow: hidden;
+        }
+        .panel.angel {
+            background: linear-gradient(180deg, #1a2340, #0d1525);
+            border: 2px solid #f9d423;
+        }
+        .panel.angel::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(249,212,35,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .panel.devil {
+            background: linear-gradient(180deg, #2a1015, #1a0a0d);
+            border: 2px solid #ff4e50;
+        }
+        .panel.devil::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(255,78,80,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .panel-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .panel-icon {
+            font-size: 2.2rem;
+        }
+        .panel-title {
+            font-size: 1.15rem;
+            font-weight: bold;
+        }
+        .panel.angel .panel-title { color: #f9d423; }
+        .panel.devil .panel-title { color: #ff4e50; }
+        .panel-role {
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        .arguments {
+            list-style: none;
+            padding: 0;
+        }
+        .arguments li {
+            padding: 13px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.5s, transform 0.5s;
+            line-height: 1.55;
+        }
+        .panel.devil .arguments li {
+            transform: translateX(20px);
+        }
+        .arguments li.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .arguments li:last-child { border-bottom: none; }
+        .arg-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .panel.angel .arg-title { color: #f9d423; }
+        .panel.devil .arg-title { color: #ff4e50; }
+        .arg-body {
+            color: #bbb;
+            font-size: 0.95rem;
+        }
+
+        .finale-container {
+            width: 100%;
+            max-width: 1050px;
+            margin-top: 28px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+        .finale-container.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .finale {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border: 2px solid;
+            border-image: linear-gradient(90deg, #f9d423, #ff4e50) 1;
+            border-radius: 0;
+            padding: 24px;
+            text-align: center;
+        }
+        .finale h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            background: linear-gradient(90deg, #f9d423, #ff4e50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .finale p {
+            color: #ccc;
+            line-height: 1.7;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .round-counter {
+            margin: 20px 0;
+            color: #555;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { color: #eee; }
+
+        .shake {
+            animation: shake 0.4s ease-in-out;
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Get to the Gym.</h1>
+    <p class="subtitle">They both agree. They just have... different approaches.</p>
+
+    <button class="ask-btn" id="askBtn" onclick="startMotivation()">Should I Go to the Gym?</button>
+
+    <div class="arena">
+        <div class="panel angel">
+            <div class="panel-header">
+                <div class="panel-icon">&#x1F607;</div>
+                <div>
+                    <div class="panel-title">The Angel</div>
+                    <div class="panel-role">Gentle Motivation</div>
+                </div>
+            </div>
+            <ul class="arguments" id="angelArgs"></ul>
+        </div>
+
+        <div class="panel devil">
+            <div class="panel-header">
+                <div class="panel-icon">&#x1F608;</div>
+                <div>
+                    <div class="panel-title">The Devil</div>
+                    <div class="panel-role">Drill Sergeant</div>
+                </div>
+            </div>
+            <ul class="arguments" id="devilArgs"></ul>
+        </div>
+    </div>
+
+    <div class="finale-container" id="finaleContainer">
+        <div class="finale">
+            <h3 id="finaleTitle"></h3>
+            <p id="finaleText"></p>
+        </div>
+    </div>
+
+    <div class="round-counter" id="roundCounter"></div>
+    <a href="index.html" class="back-link">&larr; Back to Recipes</a>
+
+<script>
+const angelBank = [
+    {
+        title: "You deserve to feel amazing today.",
+        body: "That post-workout glow? The calm confidence? The deep sleep tonight? All of that is waiting for you. You just have to show up."
+    },
+    {
+        title: "Your body is your lifelong home.",
+        body: "You only get one. Every workout is an act of love toward the person who lives inside it. Treat yourself like someone worth taking care of."
+    },
+    {
+        title: "Progress isn't about perfection.",
+        body: "You don't need to crush a PR today. Just move. A gentle jog, some stretches, a few sets -- anything counts. Showing up IS the win."
+    },
+    {
+        title: "Think about how proud you'll feel after.",
+        body: "That quiet satisfaction when you're driving home, knowing you did something good for yourself? No amount of couch time can match that feeling."
+    },
+    {
+        title: "You inspire people without knowing it.",
+        body: "Someone at the gym sees you showing up and thinks 'if they can do it, so can I.' Your consistency matters more than you realize."
+    },
+    {
+        title: "Every rep is a vote for the person you want to be.",
+        body: "You're not just building muscle -- you're building identity. Each workout says 'I'm someone who takes care of themselves.' That belief compounds."
+    },
+    {
+        title: "The hardest part is the door.",
+        body: "Once you're there, the rest takes care of itself. Just get dressed, grab your keys, and walk out. Momentum will carry you the rest of the way."
+    },
+    {
+        title: "Your future self is cheering for you right now.",
+        body: "Six months from now, you'll look back at today and be grateful you started. Every journey has a first step. This is yours."
+    },
+    {
+        title: "Movement is medicine for the mind.",
+        body: "Feeling stressed? Anxious? Foggy? Exercise is clinically proven to help with all of it. Your brain is asking for this just as much as your body."
+    },
+    {
+        title: "You don't have to go hard. Just go.",
+        body: "Some days are 100%. Some days are 40%. Both are infinitely better than 0%. The gym doesn't judge -- it just waits for you, ready when you are."
+    },
+    {
+        title: "Celebrate that you're even considering it.",
+        body: "The fact that you're thinking about going means you care. That's already more than most people do today. Now just follow through."
+    },
+    {
+        title: "You'll sleep like a baby tonight.",
+        body: "Deep, restful, earned sleep. The kind where you close your eyes and just... drift. Your body will thank you at 3 AM by not waking you up."
+    },
+    {
+        title: "Small wins build big lives.",
+        body: "Today's workout is a small win. But small wins stack. They become confidence. Confidence becomes ambition. And ambition changes everything."
+    },
+    {
+        title: "Your heart literally gets stronger.",
+        body: "Not metaphorically. Your actual heart muscle gets more efficient with exercise. You're giving yourself more years with the people you love."
+    }
+];
+
+const devilBank = [
+    {
+        title: "GET UP. NOW.",
+        body: "I didn't ask if you wanted to. I didn't ask if you feel like it. I said GET UP. Your feelings are not part of this equation, recruit."
+    },
+    {
+        title: "Oh, you're TIRED? That's ADORABLE.",
+        body: "You know who else is tired? Everyone. You know who still goes? Winners. You know who stays home? People who talk about 'starting Monday.' It's always Monday with you."
+    },
+    {
+        title: "Your excuses are pathetic and I've heard them all.",
+        body: "Too tired. Too busy. Too sore. Too cold. Too hot. The gym is too far. You know what's too far? The distance between you and your potential."
+    },
+    {
+        title: "The weights aren't going to lift themselves.",
+        body: "They're sitting there on the rack, collecting dust and judging you. Even the 10-pounders are talking trash. You gonna let a dumbbell disrespect you?"
+    },
+    {
+        title: "Pain is weakness leaving the body.",
+        body: "And right now your body is FULL of weakness. It's practically a weakness warehouse. Time to hold a clearance sale. Everything must go. TO THE GYM."
+    },
+    {
+        title: "Your alarm clock believes in you more than you do.",
+        body: "It went off this morning and did its job. It showed up. It performed. And what did you do? Hit snooze. You let a clock outwork you. A CLOCK."
+    },
+    {
+        title: "I've seen wet noodles with more backbone.",
+        body: "You're out here asking an app if you should exercise. AN APP. The answer is yes. The answer has always been yes. Stop asking and start moving."
+    },
+    {
+        title: "Your muscles are filing a missing persons report.",
+        body: "They haven't seen action in so long they forgot what you look like. Show up before they relocate to someone who actually uses them."
+    },
+    {
+        title: "Sweat is just your fat crying.",
+        body: "And it should be crying. A LOT. Give it something to cry about. Get in there and make that fat weep like it's watching a sad movie."
+    },
+    {
+        title: "You think the gym is hard? LIFE is hard.",
+        body: "The gym is the easy part. It's a controlled environment with clear instructions. Pick thing up. Put thing down. Repeat. A toddler could understand this. BE BETTER THAN A TODDLER."
+    },
+    {
+        title: "I don't want to hear 'I can't.'",
+        body: "CAN'T is not in my vocabulary. CAN'T died in a ditch somewhere between your couch and the squat rack. We say 'I WILL' in this house. NOW MOVE."
+    },
+    {
+        title: "Your gym shorts are gathering dust. DUST.",
+        body: "They're in your drawer wondering if you even remember they exist. They signed up for sweat and glory. Not darkness and neglect. HONOR YOUR SHORTS."
+    },
+    {
+        title: "Every minute you sit here is a minute wasted.",
+        body: "The clock is ticking. Your metabolism is slowing. The gym is open. What exactly are we waiting for? A written invitation? Consider this one. NOW GO."
+    },
+    {
+        title: "You want motivation? HERE'S YOUR MOTIVATION.",
+        body: "Nobody is coming to save you. No magic pill. No perfect moment. There's just you, right now, making a choice. Make the right one or live with the wrong one. YOUR CALL."
+    }
+];
+
+const finales = [
+    {
+        title: "The Verdict Is Unanimous: GYM.",
+        text: "The Angel believes in you. The Devil will drag you there by your ear. Either way, you're going. Lace up. The only question left is whether you walk in with a smile or a scowl. Both work."
+    },
+    {
+        title: "Heaven and Hell Agree: Move Your Body.",
+        text: "When an angel and a devil are on the same side, you know the answer is obvious. One will high-five you on the way out. The other will yell at you until you leave. Either way -- you're leaving. For the gym."
+    },
+    {
+        title: "No Debate Today. Just Gym.",
+        text: "The Angel says you're worth it. The Devil says you're soft. They're both right. Go prove one of them wrong and the other one proud. You pick which."
+    },
+    {
+        title: "Two Voices. One Answer. GO.",
+        text: "You came here hoping someone would say 'stay home.' Bad news: even your devil wants you at the gym. The universe has spoken. Grab your water bottle and get out the door."
+    },
+    {
+        title: "Case Closed. Gym. Now.",
+        text: "The Angel offered you a hug and a gentle push. The Devil offered you a boot to the backside. The destination is the same. The only choice is the soundtrack. Pick your fighter and GO."
+    },
+    {
+        title: "Both Shoulders Have Spoken.",
+        text: "Left shoulder says you're amazing and capable. Right shoulder says you're a couch potato who needs to earn their dinner. Honestly? Listen to both. Get the workout, then get the meal. You'll have earned it."
+    },
+    {
+        title: "Angelic Encouragement. Devilish Accountability.",
+        text: "You need both. The carrot and the stick. The warm hug and the cold shower. Today you got both. Now close this tab, open your gym bag, and go do something your body will thank you for."
+    },
+    {
+        title: "The Only Losing Move Is Not Going.",
+        text: "The Angel will be proud of you. The Devil will stop yelling at you. Your muscles will remember you exist. Your endorphins will throw a party. Everyone wins. Especially you. NOW GO."
+    }
+];
+
+let rounds = 0;
+let running = false;
+
+function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function pickRandom(arr, n) {
+    return shuffle(arr).slice(0, n);
+}
+
+function startMotivation() {
+    if (running) return;
+    running = true;
+
+    const btn = document.getElementById('askBtn');
+    btn.disabled = true;
+    btn.textContent = 'They\'re discussing...';
+
+    const angelList = document.getElementById('angelArgs');
+    const devilList = document.getElementById('devilArgs');
+    const finaleContainer = document.getElementById('finaleContainer');
+
+    angelList.innerHTML = '';
+    devilList.innerHTML = '';
+    finaleContainer.classList.remove('visible');
+
+    const numArgs = 4;
+    const aArgs = pickRandom(angelBank, numArgs);
+    const dArgs = pickRandom(devilBank, numArgs);
+
+    aArgs.forEach(a => {
+        const li = document.createElement('li');
+        li.innerHTML = `<span class="arg-title">${a.title}</span><span class="arg-body">${a.body}</span>`;
+        angelList.appendChild(li);
+    });
+    dArgs.forEach(a => {
+        const li = document.createElement('li');
+        li.innerHTML = `<span class="arg-title">${a.title}</span><span class="arg-body">${a.body}</span>`;
+        devilList.appendChild(li);
+    });
+
+    // Animate: alternate angel then devil
+    const allItems = [];
+    for (let i = 0; i < numArgs; i++) {
+        allItems.push(angelList.children[i]);
+        allItems.push(devilList.children[i]);
+    }
+
+    allItems.forEach((item, idx) => {
+        setTimeout(() => {
+            item.classList.add('visible');
+            // Shake the devil panel when devil args appear
+            if (idx % 2 === 1) {
+                document.querySelector('.panel.devil').classList.add('shake');
+                setTimeout(() => document.querySelector('.panel.devil').classList.remove('shake'), 400);
+            }
+        }, 500 * (idx + 1));
+    });
+
+    const totalDelay = 500 * (allItems.length + 1) + 800;
+    setTimeout(() => {
+        const finale = finales[Math.floor(Math.random() * finales.length)];
+        document.getElementById('finaleTitle').textContent = finale.title;
+        document.getElementById('finaleText').textContent = finale.text;
+        finaleContainer.classList.add('visible');
+
+        rounds++;
+        document.getElementById('roundCounter').textContent =
+            `Motivational rounds: ${rounds} | They'll keep going as long as you need.`;
+
+        btn.disabled = false;
+        btn.textContent = rounds === 0 ? 'Should I Go to the Gym?' : 'Ask Again (You Already Know the Answer)';
+        running = false;
+
+        finaleContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, totalDelay);
+}
+</script>
+
+</body>
+</html>
