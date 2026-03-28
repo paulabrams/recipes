@@ -1,0 +1,521 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym or Eat? - The Great Debate</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: Georgia, serif;
+            background: #1a1a2e;
+            color: #eee;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 20px 0 5px;
+            text-align: center;
+        }
+        .subtitle {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .ask-btn {
+            font-family: Georgia, serif;
+            font-size: 1.2rem;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background: linear-gradient(135deg, #e74c3c, #f39c12);
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+            margin-bottom: 30px;
+        }
+        .ask-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(231, 76, 60, 0.6);
+        }
+        .ask-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .arena {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+            flex: 1;
+        }
+        @media (max-width: 700px) {
+            .arena { flex-direction: column; }
+        }
+
+        .panel {
+            flex: 1;
+            border-radius: 12px;
+            padding: 20px;
+            min-height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .panel.critic {
+            background: linear-gradient(180deg, #1e3a1e, #0d1f0d);
+            border: 2px solid #2ecc71;
+        }
+        .panel.defender {
+            background: linear-gradient(180deg, #3a1e1e, #1f0d0d);
+            border: 2px solid #e74c3c;
+        }
+
+        .panel-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+        }
+        .panel-icon {
+            font-size: 2rem;
+        }
+        .panel-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .panel.critic .panel-title { color: #2ecc71; }
+        .panel.defender .panel-title { color: #e74c3c; }
+        .panel-role {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .arguments {
+            list-style: none;
+            padding: 0;
+        }
+        .arguments li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            opacity: 0;
+            transform: translateY(15px);
+            transition: opacity 0.5s, transform 0.5s;
+            line-height: 1.5;
+        }
+        .arguments li.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .arguments li:last-child { border-bottom: none; }
+        .arg-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .panel.critic .arg-title { color: #2ecc71; }
+        .panel.defender .arg-title { color: #e74c3c; }
+        .arg-body {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        .verdict-container {
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 25px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+        .verdict-container.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .verdict {
+            background: linear-gradient(135deg, #16213e, #0f3460);
+            border: 2px solid #f39c12;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        .verdict h3 {
+            color: #f39c12;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        .verdict p {
+            color: #ddd;
+            line-height: 1.6;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .scoreboard {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+        .score {
+            text-align: center;
+        }
+        .score-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .score-label {
+            font-size: 0.85rem;
+            color: #888;
+        }
+        .score.gym .score-value { color: #2ecc71; }
+        .score.eat .score-value { color: #e74c3c; }
+
+        .history {
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 20px;
+            text-align: center;
+            color: #555;
+            font-size: 0.85rem;
+            padding-bottom: 30px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { color: #eee; }
+
+        .typing-dot {
+            display: inline-block;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.2; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Should I Go to the Gym... or Sit and Eat?</h1>
+    <p class="subtitle">An AI-powered debate to help you decide (or at least feel something)</p>
+
+    <button class="ask-btn" id="askBtn" onclick="startDebate()">Ask the Question</button>
+
+    <div class="scoreboard" id="scoreboard" style="display:none;">
+        <div class="score gym">
+            <div class="score-value" id="gymScore">0</div>
+            <div class="score-label">Gym Wins</div>
+        </div>
+        <div class="score">
+            <div class="score-value" style="color:#f39c12;" id="drawScore">0</div>
+            <div class="score-label">Draws</div>
+        </div>
+        <div class="score eat">
+            <div class="score-value" id="eatScore">0</div>
+            <div class="score-label">Couch Wins</div>
+        </div>
+    </div>
+
+    <div class="arena">
+        <div class="panel critic">
+            <div class="panel-header">
+                <div class="panel-icon">&#x1F4AA;</div>
+                <div>
+                    <div class="panel-title">The Critic</div>
+                    <div class="panel-role">Team Gym</div>
+                </div>
+            </div>
+            <ul class="arguments" id="criticArgs"></ul>
+        </div>
+
+        <div class="panel defender">
+            <div class="panel-header">
+                <div class="panel-icon">&#x1F355;</div>
+                <div>
+                    <div class="panel-title">The Defender</div>
+                    <div class="panel-role">Team Couch</div>
+                </div>
+            </div>
+            <ul class="arguments" id="defenderArgs"></ul>
+        </div>
+    </div>
+
+    <div class="verdict-container" id="verdictContainer">
+        <div class="verdict">
+            <h3 id="verdictTitle"></h3>
+            <p id="verdictText"></p>
+        </div>
+    </div>
+
+    <div class="history" id="history"></div>
+    <a href="index.html" class="back-link">&larr; Back to Recipes</a>
+
+<script>
+const criticBank = [
+    {
+        title: "Your body is not a storage unit.",
+        body: "Every hour on the couch, your muscles atrophy and your metabolism slows. Movement is maintenance -- skip it and things break down."
+    },
+    {
+        title: "The food isn't going anywhere.",
+        body: "The snacks will still be there when you get back. But the window to build a habit closes a little more every time you skip."
+    },
+    {
+        title: "You will not regret going.",
+        body: "No one has ever finished a workout and thought 'I wish I had eaten chips instead.' But plenty of people regret skipping."
+    },
+    {
+        title: "Discipline is a muscle too.",
+        body: "Today's version of you is either strengthening it or letting it atrophy. The gym is about proving you do what you say you'll do."
+    },
+    {
+        title: "Energy creates energy.",
+        body: "Feeling tired is not a reason to skip -- it's the reason to go. Exercise gives you more energy, not less. Science says so."
+    },
+    {
+        title: "Future you is watching.",
+        body: "In 6 months you'll either thank yourself or wish you'd started today. The best time was yesterday. The second best time is now."
+    },
+    {
+        title: "Sitting is the new smoking.",
+        body: "Sedentary lifestyles are linked to heart disease, diabetes, and depression. Your couch is literally trying to end you."
+    },
+    {
+        title: "The post-workout high is free.",
+        body: "Endorphins, dopamine, serotonin -- all released by exercise. It's the best legal drug available and it costs nothing but effort."
+    },
+    {
+        title: "Consistency beats intensity.",
+        body: "Even a mediocre workout is infinitely better than no workout. Just show up. The bar is literally on the floor."
+    },
+    {
+        title: "Your clothes are getting tighter.",
+        body: "That's not the dryer shrinking them. That's the couch expanding you. The mirror doesn't lie, even if the stretchy waistband does."
+    },
+    {
+        title: "Comfort zones are where dreams go to die.",
+        body: "Nothing good ever came from choosing the easy option every single time. Growth requires discomfort. The gym provides it in a controlled dose."
+    },
+    {
+        title: "Sleep quality improves with exercise.",
+        body: "Regular exercise leads to deeper, more restorative sleep. Skip the gym and you'll toss and turn tonight wondering why you're tired but wired."
+    }
+];
+
+const defenderBank = [
+    {
+        title: "Rest IS training.",
+        body: "Muscles grow during recovery, not during the workout. If you're tired, forcing a session produces garbage reps and raises injury risk."
+    },
+    {
+        title: "The gym will still be there tomorrow.",
+        body: "It has never once left. Not once. It is a building. It is extremely committed to being in that location."
+    },
+    {
+        title: "Comfort food is stress management.",
+        body: "Carbs boost serotonin. Warmth and pleasure reduce cortisol. A bowl of pasta tonight is basically therapy with better flavor."
+    },
+    {
+        title: "Guilt-driven workouts breed burnout.",
+        body: "People who last decades in fitness made it sustainable -- not by white-knuckling every session. One rest day builds a better long-term relationship with exercise."
+    },
+    {
+        title: "You've earned a break.",
+        body: "You exist in a society that glorifies grinding. Taking a day off is not failure -- it's wisdom. Even God rested on the seventh day."
+    },
+    {
+        title: "The couch has never injured anyone.",
+        body: "Can the squat rack say that? Can the treadmill say that? I rest my case. Literally. On this very comfortable couch."
+    },
+    {
+        title: "Mental health matters too.",
+        body: "Sometimes the most productive thing you can do is decompress. Not everything has to be optimized. You're a person, not a spreadsheet."
+    },
+    {
+        title: "One day won't matter in 10 years.",
+        body: "Nobody on their deathbed says 'I wish I hadn't skipped leg day on March 28th.' But they might say 'I wish I'd relaxed more.'"
+    },
+    {
+        title: "Your body is sending you signals.",
+        body: "Craving food and rest isn't weakness -- it's your body communicating its needs. Ignoring those signals is how overtraining syndrome starts."
+    },
+    {
+        title: "Pizza has all the food groups.",
+        body: "Grains, dairy, vegetables, protein. It's basically a balanced meal shaped like a delicious triangle. The food pyramid was meant to be eaten."
+    },
+    {
+        title: "Netflix isn't going to watch itself.",
+        body: "You have 47 shows in your watchlist. Those actors worked hard on those performances. The least you can do is sit down and appreciate their art."
+    },
+    {
+        title: "Sweatpants are athleisure.",
+        body: "You're technically wearing athletic clothing. That's basically the same as being athletic. Close enough. The outfit counts."
+    }
+];
+
+let gymWins = 0;
+let eatWins = 0;
+let draws = 0;
+let debateRunning = false;
+
+function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function pickRandom(arr, n) {
+    return shuffle(arr).slice(0, n);
+}
+
+const verdicts = {
+    gym: [
+        {
+            title: "The Verdict: Get Off the Couch",
+            text: "The Critic wins this round. Both sides made fair points, but here's the honest truth: if you're asking the question, you probably already know you should go. Hit the gym for even 20 minutes, then come home and enjoy a meal guilt-free."
+        },
+        {
+            title: "The Verdict: Lace Up",
+            text: "The Critic takes it. The Defender tried hard, but 'the gym is a building' isn't exactly a compelling fitness philosophy. Go move your body. The pizza will taste even better after."
+        },
+        {
+            title: "The Verdict: Gym. Final Answer.",
+            text: "Look, the Defender was funny, but funny doesn't build muscle. You came here because part of you wants to be convinced to go. Consider yourself convinced. See you at the squat rack."
+        }
+    ],
+    eat: [
+        {
+            title: "The Verdict: Rest Day Approved",
+            text: "The Defender wins this one. Sometimes the most disciplined thing you can do is rest. Your body asked for a break and you listened. That's not weakness -- that's sustainability. Enjoy the food."
+        },
+        {
+            title: "The Verdict: Couch It Is",
+            text: "The Critic made strong points, but the Defender's argument about burnout hits home. One intentional rest day won't undo your progress. Eat well, recover, and come back stronger tomorrow."
+        },
+        {
+            title: "The Verdict: Eat. No Guilt.",
+            text: "The Defender takes the W. Recovery is part of the process, comfort food has real science behind it, and you deserve to enjoy life. Tomorrow is leg day though. No excuses."
+        }
+    ],
+    draw: [
+        {
+            title: "The Verdict: Too Close to Call",
+            text: "This one's a draw. Both agents brought the heat. Compromise: do a short home workout -- some pushups, squats, stretches -- then reward yourself with a great meal. Boom. Both sides win."
+        },
+        {
+            title: "The Verdict: Split Decision",
+            text: "Neither side could land a knockout blow. Here's the middle path: take a long walk (it counts as movement), then treat yourself to something delicious. The best of both worlds."
+        }
+    ]
+};
+
+function startDebate() {
+    if (debateRunning) return;
+    debateRunning = true;
+
+    const btn = document.getElementById('askBtn');
+    btn.disabled = true;
+    btn.textContent = 'Debating...';
+
+    const criticList = document.getElementById('criticArgs');
+    const defenderList = document.getElementById('defenderArgs');
+    const verdictContainer = document.getElementById('verdictContainer');
+
+    criticList.innerHTML = '';
+    defenderList.innerHTML = '';
+    verdictContainer.classList.remove('visible');
+
+    const numArgs = 4;
+    const cArgs = pickRandom(criticBank, numArgs);
+    const dArgs = pickRandom(defenderBank, numArgs);
+
+    // Build list items
+    cArgs.forEach(a => {
+        const li = document.createElement('li');
+        li.innerHTML = `<span class="arg-title">${a.title}</span><span class="arg-body">${a.body}</span>`;
+        criticList.appendChild(li);
+    });
+    dArgs.forEach(a => {
+        const li = document.createElement('li');
+        li.innerHTML = `<span class="arg-title">${a.title}</span><span class="arg-body">${a.body}</span>`;
+        defenderList.appendChild(li);
+    });
+
+    // Animate arguments appearing one by one, alternating sides
+    const allItems = [];
+    for (let i = 0; i < numArgs; i++) {
+        allItems.push(criticList.children[i]);
+        allItems.push(defenderList.children[i]);
+    }
+
+    allItems.forEach((item, idx) => {
+        setTimeout(() => {
+            item.classList.add('visible');
+        }, 400 * (idx + 1));
+    });
+
+    // Show verdict after all arguments
+    const totalDelay = 400 * (allItems.length + 1) + 600;
+    setTimeout(() => {
+        // Random winner with slight gym bias (because we care about you)
+        const roll = Math.random();
+        let winner;
+        if (roll < 0.45) winner = 'gym';
+        else if (roll < 0.85) winner = 'eat';
+        else winner = 'draw';
+
+        const picks = verdicts[winner];
+        const pick = picks[Math.floor(Math.random() * picks.length)];
+
+        document.getElementById('verdictTitle').textContent = pick.title;
+        document.getElementById('verdictText').textContent = pick.text;
+        verdictContainer.classList.add('visible');
+
+        if (winner === 'gym') gymWins++;
+        else if (winner === 'eat') eatWins++;
+        else draws++;
+
+        document.getElementById('gymScore').textContent = gymWins;
+        document.getElementById('eatScore').textContent = eatWins;
+        document.getElementById('drawScore').textContent = draws;
+        document.getElementById('scoreboard').style.display = 'flex';
+
+        document.getElementById('history').textContent =
+            `Total debates: ${gymWins + eatWins + draws} | Ask again for a new round!`;
+
+        btn.disabled = false;
+        btn.textContent = 'Ask Again';
+        debateRunning = false;
+
+        verdictContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, totalDelay);
+}
+</script>
+
+</body>
+</html>
