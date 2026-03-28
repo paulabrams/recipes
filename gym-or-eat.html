@@ -206,6 +206,50 @@ layout: none
         }
         .back-link:hover { color: #eee; }
 
+        .tone-toggle {
+            display: flex;
+            gap: 0;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            overflow: hidden;
+            border: 2px solid #444;
+        }
+        .tone-btn {
+            font-family: Georgia, serif;
+            font-size: 0.95rem;
+            padding: 10px 24px;
+            border: none;
+            cursor: pointer;
+            background: #2a2a3e;
+            color: #888;
+            transition: all 0.3s;
+        }
+        .tone-btn.active {
+            color: white;
+            font-weight: bold;
+        }
+        .tone-btn.vanilla.active {
+            background: #5b6abf;
+        }
+        .tone-btn.spicy.active {
+            background: #c0392b;
+        }
+        .tone-btn:hover:not(.active) {
+            background: #3a3a4e;
+        }
+        .spicy-warning {
+            color: #e74c3c;
+            font-size: 0.75rem;
+            text-align: center;
+            margin-top: -15px;
+            margin-bottom: 15px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .spicy-warning.visible {
+            opacity: 1;
+        }
+
         .typing-dot {
             display: inline-block;
             animation: blink 1s infinite;
@@ -220,6 +264,12 @@ layout: none
 
     <h1>Should I Go to the Gym... or Sit and Eat?</h1>
     <p class="subtitle">An AI-powered debate to help you decide (or at least feel something)</p>
+
+    <div class="tone-toggle">
+        <button class="tone-btn vanilla active" onclick="setTone('vanilla')">Vanilla</button>
+        <button class="tone-btn spicy" onclick="setTone('spicy')">Spicy</button>
+    </div>
+    <p class="spicy-warning" id="spicyWarning">Warning: Spicy mode will roast you. You asked for it.</p>
 
     <button class="ask-btn" id="askBtn" onclick="startDebate()">Ask the Question</button>
 
@@ -375,10 +425,166 @@ const defenderBank = [
     }
 ];
 
+const spicyCriticBank = [
+    {
+        title: "You already know you're not going.",
+        body: "You opened this app hoping it would give you permission to skip. It won't. Get up, you absolute couch goblin."
+    },
+    {
+        title: "Your gym membership is crying.",
+        body: "It's been auto-drafting from your account while you auto-draft chips from the bag. At least one of you should show up."
+    },
+    {
+        title: "Your arteries are writing a resignation letter.",
+        body: "They've been carrying your snack habits for years and they're about to stage a walkout. Literally. They need you to walk."
+    },
+    {
+        title: "You're not 'resting.' You're quitting in slow motion.",
+        body: "There's a difference between a recovery day and a lifestyle. You've been recovering since 2019. The muscles have left the chat."
+    },
+    {
+        title: "Your scale is developing trust issues.",
+        body: "Every time you step on it, it flinches. Give it some good news for once. Or at least stop stress-eating while weighing yourself."
+    },
+    {
+        title: "Even your Fitbit gave up on you.",
+        body: "It stopped sending reminders because it felt like it was being emotionally manipulative. Your watch literally lost hope."
+    },
+    {
+        title: "You have the cardiovascular fitness of a throw pillow.",
+        body: "You get winded opening jars. You get winded TALKING about the gym. The stairs in your house are an undefeated boss fight."
+    },
+    {
+        title: "Your 'before' photo has been 'before' for 3 years.",
+        body: "At this point it's just a photo. The 'after' is a myth, like your gym routine and your self-discipline."
+    },
+    {
+        title: "Your body is a temple. A condemned one.",
+        body: "The health inspector came by. He cried. He left a citation and a pamphlet for the nearest gym. You used it as a coaster."
+    },
+    {
+        title: "Gravity is winning and you're helping it.",
+        body: "Newton's law says a body at rest stays at rest. He was describing you specifically. He saw the future and it was you, horizontal, holding nachos."
+    },
+    {
+        title: "Your sweatpants are doing load-bearing work.",
+        body: "That elastic waistband is the hardest-working thing in your house right now. It deserves better. YOU deserve better. Probably."
+    },
+    {
+        title: "Your resting heart rate is 'concerned.'",
+        body: "Not a number. Just the word 'concerned.' Your doctor's chart just has a frowny face where the data should be."
+    }
+];
+
+const spicyDefenderBank = [
+    {
+        title: "You're already shaped like comfort. Own it.",
+        body: "Round is a shape. A warm, huggable, gravitationally significant shape. The gym wants to take that from you. Don't let it."
+    },
+    {
+        title: "Abs are temporary. Cheese is forever.",
+        body: "In 100 years nobody will remember your six-pack. But aged cheddar? That only gets better with time. Be the cheese."
+    },
+    {
+        title: "Exercise is just paying to suffer.",
+        body: "You drive to a building, pick up heavy things, put them back down, then drive home. That's not fitness. That's a very boring heist with no payoff."
+    },
+    {
+        title: "Your couch has Stockholm syndrome and it's mutual.",
+        body: "It knows your exact shape. You've trained it more consistently than you've ever trained anything. That's commitment. That's love."
+    },
+    {
+        title: "Gym people are insufferable anyway.",
+        body: "Do you want to become someone who talks about macros at dinner parties? Who posts mirror selfies with captions about 'the grind'? Exactly. Stay home. Stay humble."
+    },
+    {
+        title: "Your fridge didn't stock itself.",
+        body: "You went shopping. You made selections. There's a meal plan in there and it would be wasteful not to execute it. This is fiscal responsibility."
+    },
+    {
+        title: "Running is just fast walking for people with anxiety.",
+        body: "And the treadmill? That's running but you don't even go anywhere. You could achieve the same nothing by sitting still. Much more efficiently."
+    },
+    {
+        title: "You'll live longer? Doing what? More gym?",
+        body: "They say exercise adds years to your life, but those extra years are spent... exercising. It's a pyramid scheme for your skeleton."
+    },
+    {
+        title: "Leg day? In THIS economy?",
+        body: "You can barely afford groceries and they want you to spend energy for free? Working out is literally unpaid labor. Your legs didn't sign up for this."
+    },
+    {
+        title: "Your delivery driver believes in you.",
+        body: "Someone out there is counting on your orders. You're not lazy -- you're supporting small businesses and gig workers. You're basically a philanthropist."
+    },
+    {
+        title: "Gravity wants you on the couch.",
+        body: "It's a fundamental force of the universe pulling you downward. Who are you to argue with physics? Einstein didn't go to the gym and he did fine."
+    },
+    {
+        title: "You peaked in comfort. Don't ruin it.",
+        body: "You've achieved maximum coziness. Blanket? Check. Snacks? Check. Remote? Check. This is the endgame. The gym is a prequel nobody asked for."
+    }
+];
+
+const spicyVerdicts = {
+    gym: [
+        {
+            title: "The Verdict: Drag Yourself There, You Disaster",
+            text: "The Critic cooked you alive and you deserved every second of it. Your couch has seen more of you than your gym ever will. Go sweat. Go wheeze. Go prove your Fitbit wrong. You can eat later -- you always do."
+        },
+        {
+            title: "The Verdict: The Gym. Obviously.",
+            text: "Look, the Defender made some points, but 'be the cheese' is not a fitness plan. Your body is filing complaints. Your joints are unionizing. Go move before something important gives out."
+        },
+        {
+            title: "The Verdict: Gym Wins. Your Couch Sends Its Condolences.",
+            text: "Even the roast couldn't save you from the truth. You need this. Not want. NEED. The good news? After the gym you can eat whatever you want and feel smug about it. That's the real prize."
+        }
+    ],
+    eat: [
+        {
+            title: "The Verdict: Eat. You Beautiful Disaster.",
+            text: "The Defender somehow turned laziness into philosophy and honestly? Respect. You're not skipping the gym -- you're investing in comfort infrastructure. Order the food. Tomorrow's problem is tomorrow's problem."
+        },
+        {
+            title: "The Verdict: Couch Wins. No Apologies.",
+            text: "The Critic tried to shame you and it bounced right off your well-cushioned frame. Rest day approved. Eat something disgraceful. Tell no one. Live your truth."
+        },
+        {
+            title: "The Verdict: Stay Home, You Glorious Mess.",
+            text: "The Defender's argument about the delivery driver being a philanthropic relationship? Unhinged but technically correct. The best kind of correct. Eat up. Tip well."
+        }
+    ],
+    draw: [
+        {
+            title: "The Verdict: You're Hopeless Either Way",
+            text: "Both sides roasted you into oblivion and neither could finish you off. Compromise: do 10 pushups in front of the fridge, then eat whatever you want. You've earned nothing, but take it anyway."
+        },
+        {
+            title: "The Verdict: A Draw. Like Your Motivation.",
+            text: "Neither side won because deep down, you were never going to listen anyway. Do some stretches while you microwave your leftovers and call it a lifestyle."
+        }
+    ]
+};
+
+let currentTone = 'vanilla';
 let gymWins = 0;
 let eatWins = 0;
 let draws = 0;
 let debateRunning = false;
+
+function setTone(tone) {
+    currentTone = tone;
+    document.querySelectorAll('.tone-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector(`.tone-btn.${tone}`).classList.add('active');
+    const warning = document.getElementById('spicyWarning');
+    if (tone === 'spicy') {
+        warning.classList.add('visible');
+    } else {
+        warning.classList.remove('visible');
+    }
+}
 
 function shuffle(arr) {
     const a = [...arr];
@@ -451,8 +657,10 @@ function startDebate() {
     verdictContainer.classList.remove('visible');
 
     const numArgs = 4;
-    const cArgs = pickRandom(criticBank, numArgs);
-    const dArgs = pickRandom(defenderBank, numArgs);
+    const cBank = currentTone === 'spicy' ? spicyCriticBank : criticBank;
+    const dBank = currentTone === 'spicy' ? spicyDefenderBank : defenderBank;
+    const cArgs = pickRandom(cBank, numArgs);
+    const dArgs = pickRandom(dBank, numArgs);
 
     // Build list items
     cArgs.forEach(a => {
@@ -489,7 +697,8 @@ function startDebate() {
         else if (roll < 0.85) winner = 'eat';
         else winner = 'draw';
 
-        const picks = verdicts[winner];
+        const verdictSource = currentTone === 'spicy' ? spicyVerdicts : verdicts;
+        const picks = verdictSource[winner];
         const pick = picks[Math.floor(Math.random() * picks.length)];
 
         document.getElementById('verdictTitle').textContent = pick.title;
