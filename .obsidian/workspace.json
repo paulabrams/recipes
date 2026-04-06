@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thai/Thai Cucumber Salad.md",
+                "file": "Brunch/Galettes (buckwheat crepes).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Thai Cucumber Salad"
+              "title": "Galettes (buckwheat crepes)"
             }
           }
         ],
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "thai salad",
+                "query": "crepes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -201,6 +201,8 @@
   },
   "active": "20fb115298109ce6",
   "lastOpenFiles": [
+    "Main Courses/The Butternut Squash Soup.md",
+    "Thai/Thai Cucumber Salad.md",
     "gym-or-eat.html",
     "angel-devil-gym.html",
     "Thai/Chicken Satay with Peanut Sauce (current).md",
@@ -229,7 +231,6 @@
     "Juices/Green Orangutang Smoothie.md",
     "Juices/Green Lantern Smoothie.md",
     "Juices/Green Dragon Smoothie.md",
-    "Main Courses/The Butternut Squash Soup.md",
     "Main Courses/Supa od grassak.md",
     "Main Courses",
     "International",
@@ -237,7 +238,6 @@
     "Workout/pre-workout snacks.jpeg",
     "Workout",
     "Thai/Massaman Beef Slow Cooker Recipe _ Simple Home Edit.pdf",
-    "Thai",
     "Reference/pre-workout snacks.jpeg"
   ]
 }
