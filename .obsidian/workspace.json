@@ -48,9 +48,23 @@
               "icon": "lucide-file",
               "title": "Galettes (buckwheat crepes)"
             }
+          },
+          {
+            "id": "5e2565dd7621f49b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brunch/Galettes (buckwheat crepes).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Galettes (buckwheat crepes)"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -82,10 +96,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "crepes",
+                "query": "galett",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -199,8 +213,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "20fb115298109ce6",
+  "active": "5e2565dd7621f49b",
   "lastOpenFiles": [
+    "Sauces and Seasoning/Taco Seasoning.md",
     "Main Courses/The Butternut Squash Soup.md",
     "Thai/Thai Cucumber Salad.md",
     "gym-or-eat.html",
@@ -231,7 +246,6 @@
     "Juices/Green Orangutang Smoothie.md",
     "Juices/Green Lantern Smoothie.md",
     "Juices/Green Dragon Smoothie.md",
-    "Main Courses/Supa od grassak.md",
     "Main Courses",
     "International",
     "Macedonian",
