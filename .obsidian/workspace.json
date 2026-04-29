@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "galett",
+                "query": "japan",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -213,7 +213,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5e2565dd7621f49b",
+  "active": "52f7b51b38121102",
   "lastOpenFiles": [
     "Sauces and Seasoning/Taco Seasoning.md",
     "Main Courses/The Butternut Squash Soup.md",
