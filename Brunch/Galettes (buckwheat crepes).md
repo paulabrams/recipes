@@ -1,13 +1,25 @@
 # Galettes (Buckwheat Crepes)
 
 ## Ingredients
+
 - [ ] 3 eggs
 - [ ] 1 can coconut milk
 - [ ] 1/2 can water
 - [ ] Pinch of salt
 - [ ] 1.25 cups buckwheat flour
 
+### Variant (5 eggs)
+
+Scaled ×5/3 from the base recipe.
+
+- [ ] 5 eggs
+- [ ] 1 2/3 cans coconut milk
+- [ ] 5/6 can water
+- [ ] Pinch of salt
+- [ ] About 2 cups + 1 Tbsp buckwheat flour
+
 ## Directions
+
 1. Preheat cast iron crepe pan on low heat
 2. Combine ingredients in a mixing bowl, starting with eggs
 3. Add liquids (coconut milk and water) next, whisking after each addition
@@ -19,12 +31,14 @@
 9. Repeat with remaining batter
 
 ## Tips
+
 - Keep pan temperature low to prevent sticking
 - Whisk thoroughly after each ingredient addition
 - Make crepes thin for best texture
 - First crepe is often a test - adjust heat as needed
 
 ## Notes
+
 - Traditional French buckwheat crepes
 - Can be filled with sweet or savory fillings
 - Makes about 8-10 crepes

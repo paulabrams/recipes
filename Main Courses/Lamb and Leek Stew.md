@@ -16,6 +16,24 @@
 - [ ] 1 tbsp olive oil
 - [ ] Salt and pepper to taste
 
+### Variant (3 lbs lamb)
+
+Scaled x1.5 from the base recipe.
+
+- [ ] 3 lbs lamb shoulder, trimmed of fat and cubed
+- [ ] 6 leeks, green ends removed, sliced into half-moons
+- [ ] 4-5 cloves garlic, minced
+- [ ] 4 1/2 cups carrots, cubed
+- [ ] 3 cups mushrooms, quartered
+- [ ] 1 1/2 cans (about 21 oz) diced tomatoes
+- [ ] 2 1/4 cups chicken stock
+- [ ] 1 1/2 cups red wine
+- [ ] 1 tbsp fresh rosemary, minced
+- [ ] 3/4 cup fresh parsley, chopped
+- [ ] 3 bay leaves
+- [ ] 1 1/2 tbsp olive oil
+- [ ] Salt and pepper to taste
+
 ## Directions
 
 1. Season cubed lamb with salt and pepper.

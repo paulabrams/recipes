@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "japan",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -117,8 +117,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -213,7 +212,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52f7b51b38121102",
+  "active": "3e11921cb6fa04ba",
   "lastOpenFiles": [
     "Sauces and Seasoning/Taco Seasoning.md",
     "Main Courses/The Butternut Squash Soup.md",
