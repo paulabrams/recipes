@@ -1,6 +1,7 @@
 # Lemon-Garlic Kale Salad (best!)
 
 ## Ingredients
+
 - [ ] 2 cups sliced almonds, toasted
 - [ ] 1/3  cup freshly squeezed lemon juice (from 2-4 lemons)
 - [ ] 1 heaping teaspoon kosher salt
@@ -12,6 +13,7 @@
 - [ ] 1½ cups freshly grated Romano or Parmesan or Gruyere (optional)
 
 ## Directions
+
 1. Toast sliced almonds in a dry pan until golden brown; set aside to cool
 2. In a bowl, combine lemon juice and 1 heaping teaspoon salt
 3. Slowly whisk in olive oil to create dressing
@@ -25,11 +27,13 @@
 11. Toss gently and serve immediately
 
 ## Tips
+
 - Massaging kale with dressing makes it more tender and digestible
 - Add avocado just before serving to prevent browning
 - Let garlic steep in dressing for at least 15 minutes for best flavor
 
 ## Notes
+
 - Serves 6-8 people
 - Can be made without cheese for vegan option
 - Kale can be prepared and dressed several hours ahead; add apples and avocado just before serving
